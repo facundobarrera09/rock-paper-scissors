@@ -1,2 +1,31 @@
-color palette from page: https://paletton.com/#uid=23+0u0kltl-bTq1gBnRq4jouNh8
-base color: 343478
+color palette obtained from page: https://paletton.com/#uid=23+0u0kltl-bTq1gBnRq4jouNh8
+base color: #343478
+
+GAME PLANNING
+
+main game:
+
+    wait for user to press the 'start' button
+    start the game and initialize point to 0
+    start a round
+    generate a random 'rock-paper-scissors' value and store it
+    ask user for value (and validate it)
+    compare values
+    add point to winner and print round result
+    end the round
+    if round number is 5, print game winner and end the game
+
+generate random value:
+
+    assing number 1 to 'Rock', 2 to 'Paper', and 3 to 'Scissors'
+    generate a random number between 1 and 3 (inclusive)
+    return the string assosiated to the number
+
+ask value and validate it:
+
+    promt user with message 'Enter rock, paper, or scissors'
+    check if the input is empty
+    make a lowercase copy of the input
+    assert that lowercase input is 'rock', 'paper', or 'scissors'
+    if it is, return the value
+    if not, ask again until valid
